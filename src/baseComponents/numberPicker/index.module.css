@@ -1,0 +1,30 @@
+.number-picker-container {
+    height: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.number-picker-delete-btn,
+.number-picker-add-btn {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    text-align: center;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.number-picker-delete-btn:hover,
+.number-picker-add-btn:hover {
+    background-color: #bbb;
+}
+
+.number-picker-container input {
+    margin-left: 5px;
+    width: 33px;
+    border: 0;
+    border-bottom: 1px #ccc dotted;
+}

@@ -1,0 +1,21 @@
+.form_tool_container {
+    width: 180px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    margin-left: 215px;
+    margin-top: 55px;
+    position: absolute;
+    box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.form_tool_header{
+    background-color: #eef6fc;
+    height: 20px;
+    color: #6998d6;
+    line-height: 20px;
+    text-indent: 10px;
+}
+
+.form_tool_content input{
+    padding: 10px;
+}

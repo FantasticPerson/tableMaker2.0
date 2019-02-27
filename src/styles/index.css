@@ -1,0 +1,10 @@
+@import './reset.css';
+
+html{
+    font-size: 12px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}

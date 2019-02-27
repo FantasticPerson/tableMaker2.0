@@ -1,0 +1,33 @@
+.subtool{
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 10px;
+}
+
+.subtool-container {
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    position: absolutergb(112, 50, 50);
+    box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.2)
+}
+
+.subtool-item {
+    align-items: center;
+    height: 26px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.subtool-item-selected {
+    background-color: rgb(238, 246, 252);
+}
+
+.subtool-item img {
+    margin-left: 3px;
+}
+
+.subtool-item div {
+    margin-left: 3px;
+}

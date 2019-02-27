@@ -1,0 +1,92 @@
+.component-edit-container {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #eee;
+    margin-top: 10px;
+    margin-left: -10px;
+    box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.2);
+}
+
+.component-edit-header {
+    text-indent: 5px;
+    height: 20px;
+    background-color: #6998d6;
+    line-height: 20px;
+    color: #FFF;
+}
+
+.component-edit-header img {
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.component-edit-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.component-edit-item {
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component-edit-item span {
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 90px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.component-edit-item:hover span{
+    visibility: visible;
+}
+
+.component-edit-item:hover{
+    box-shadow: -5px -5px 5px #eee inset;
+}
+
+.component-edit-item:nth-child(1) img {
+    width: 23px;
+    height: 23px;
+}
+
+.component-edit-item:nth-child(2) img {
+    width: 26px;
+    height: 26px;
+}
+
+.component-edit-item:nth-child(3) img {
+    width: 28px;
+    height: 28px;
+}
+
+.component-edit-item:nth-child(4) img {
+    width: 26px;
+    height: 26px;
+}
+
+.component-edit-item:nth-child(5) img {
+    width: 30px;
+    height: 22px;
+}
+
+.component-edit-item:nth-child(6) img {
+    width: 26px;
+    height: 26px;
+}
