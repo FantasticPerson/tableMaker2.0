@@ -5,9 +5,23 @@ import { createSelector } from 'reselect'
 import * as toolActions from './redux/actions/tool'
 import Router from './router'
 import Toolbar from './components/toolbar/index'
+import {OverLayMap} from './utils/registerModal'
 import './styles/index.css'
 
 class App extends Component {
+  renderOverLay() {
+    let _overLayMap = OverLayMap()
+    let overLayList = this.props.overLayList || []
+    
+    return overLayList.map((item, index) => {
+      let cp = _overLayMap[item.name];
+      if (cp) {
+        return React.createElement(cp, { key: index, data: item.data, ...this.props })
+      } else {
+        console.error('the overLay name ' + item.name + ' may be not defined');
+      }
+    });
+  }
   render() {
     const { updateComponentEdit, updateEditTool, updateSubEdit, updateFormTool, updateSetStyle } = this.props
     let toolProps = {
@@ -30,6 +44,7 @@ class App extends Component {
       <div className="App">
         <Toolbar data={toolProps}></Toolbar>
         <Router />
+        {this.renderOverLay()}
       </div>
     );
   }
