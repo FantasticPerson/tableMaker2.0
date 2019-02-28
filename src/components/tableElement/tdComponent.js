@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { debounce } from 'lodash'
 
 export default class TdComponent extends Component {
     constructor() {
@@ -14,7 +13,6 @@ export default class TdComponent extends Component {
                     backgroundColor: '#eee',
                     top: 0,
                     right: 0,
-
                 }
             },
             { classNames: 'dragline-n', direction: 'n' },
@@ -51,7 +49,6 @@ export default class TdComponent extends Component {
                                     style={styles}
                                     className={item.classNames}
                                     onMouseDown={(e) => { this.onMouseDown(e, item.direction) }}
-
                                 />
                             )
                         })
@@ -71,6 +68,7 @@ export default class TdComponent extends Component {
         window.addEventListener('mousemove', this.onMouseMove)
         window.addEventListener('mouseup', this.onMouseUp)
     }
+
     onMouseMove = (e) => {
         if (this.mouseDown) {
             this.setState({
@@ -78,6 +76,7 @@ export default class TdComponent extends Component {
             })
         }
     }
+
     onMouseUp = (e) => {
         this.mouseDown = false
         window.removeEventListener('mousemove', this.onMouseMove)

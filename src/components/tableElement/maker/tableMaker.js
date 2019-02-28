@@ -12,6 +12,7 @@ export default class tableMaker extends Object {
         this.setColWidth = setColWidth
         this.setRowHeight = setRowHeight
         this.initTds = initTds
+        this.tds = []
 
         this.initTds()
     }
@@ -26,11 +27,13 @@ function initTds() {
             tdArr[i][j] = this.createTd(j, i, null);
         }
     }
+    this.tds = tdArr
 }
 
 function createTd(x, y, recoverData, isPlaceHolder = false) {
     return new TdMaker({
-        posInfo: { x, y, rowSpan: 1, colSpan: 1, tableWidth: 1, tableHeight: 1 }
+        posInfo: { x, y, rowSpan: 1, colSpan: 1, tableWidth: 1, tableHeight: 1 },
+        type: 0
     })
 }
 
@@ -39,6 +42,22 @@ function setRowHeight(id, height) {
 }
 
 function setColWidth(id, width) {
+
+}
+
+function getItemByPoint(point){
+
+}
+
+function merge(tdArr){
+    
+}
+
+function split(tdArr){
+
+}
+
+function checkCanMerge(){
 
 }
 
